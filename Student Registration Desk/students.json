@@ -1,0 +1,30 @@
+// Lets take a scenario of registration of students.
+
+// DOM PART-->
+let submitBtn = document.getElementById("submitBtn");
+let showStudentDiv = document.querySelector(".table");
+
+// Adding Event Listeners-->
+submitBtn.addEventListener("submit", addStudent);
+
+// Defining Handlers and functions-->
+function addStudent(e) {
+    e.preventDefault();
+
+    // Getting data from the form.
+    let name = document.students.stName.value;
+    let email = document.students.stEmail.value;
+    let course = document.students.stCourse.value;
+    let fees = document.students.stFees.value;
+    let feeStatus;
+    var ele = document.getElementsByName("stFeesStatus");
+
+    for (i = 0; i < ele.length; i++) {
+        if (ele[i].checked) {
+            feeStatus = ele[i].value;
+        }
+    }
+
+    // Sending it to the server.. or local.
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm-Clock</title>
+    <link rel="stylesheet" href="Alarm-clock.css" />
+    <script src="https://use.fontawesome.com/cfa062502d.js"></script>
+</head>
+
+<body onload="startTime()">
+    <h1>Alarm-Clock</h1>
+    <hr />
+    <div class="wrapper">
+        <div class="currentTime">
+            <div id="hours"></div>
+            <span id="h">:</span>
+            <div id="minutes"></div>
+            <span id="m">:</span>
+            <div id="seconds"></div>
+            <div id="ampm"></div>
+        </div>
+        <div class="alarm">
+            <div id="newAlarm">New Alarm <span class="fa fa-plus"> </span></div>
+            <div id="setAlarm" class="disappear">
+                <p align="center">Decide The Time:</p>
+                <input type="time" name="time" id="setTime" />
+                <p>Decide The Day/Date:</p>
+                <input type="date" name="date" id="setDate" />
+                <p>Sound:</p>
+                <select name="tone" id="tone">
+            <option value="tone1">Ringtone 1</option>
+            <option value="tone2">Ringtone 2</option>
+            <option value="tone3">Ringtone 3</option>
+            <option value="tone4">Ringtone 4</option>
+            <option value="tone5">Ringtone 5</option>
+          </select>
+                <label for="lbl">Label:</label>
+                <input type="text" name="lbl" id="lbl" placeholder="Label" style="
+              font-family: Cambria, Cochin, Georgia, Times, ' Times New Roman ',
+                serif;
+              font-size: 1.1rem;
+              letter-spacing: 3px;
+              word-spacing: 5px;
+            " />
+                <div>
+                    <button id="set">Set</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </div>
+            <div id="setted" class="settedDisappear">
+                <div id="alarmName"></div>
+                <div id="settedTime">
+                    <div id="tm"></div>
+                    <div id="toggleBtn">
+                        <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+                    </div>
+                </div>
+                <div id="settedDate"></div>
+            </div>
+        </div>
+    </div>
+    <script src="Alarm-clock.js"></script>
+</body>
+
+</html>
