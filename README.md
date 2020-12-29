@@ -8,3 +8,5 @@ From these projects you will learn-->
 3. BootStrap for UI
 4. JS Most Used Methods- such as map,forEach,etc.
 5. JS LocalStorage
+
+Note: I learn all these projects from Youtube channels like codeWtihHarry, Deved, etc.
